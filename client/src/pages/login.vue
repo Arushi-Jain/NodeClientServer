@@ -48,7 +48,7 @@ export default {
       }
       this.$router.push({ path: '/' })
       var token = ''
-      axios.post('http://localhost:3000/apis/login', {email: '', password: ''}).then(function (response) {
+      axios.post('http://localhost:3000/api/login', {email: '', password: ''}).then(function (response) {
         console.log('login token : ', response)
         token = response
       })
